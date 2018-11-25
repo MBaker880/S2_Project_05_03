@@ -15,19 +15,20 @@
 
 
 /* Article Styles */
+/* Floats the article element to the left. */
 article {
     float: left;
     width: 384px;
 }
 
-
-
 /* First Line and Drop Cap Styles */
+/* Makes the first line of text of this element to be different than the rest of the text. */
 article p:first-of-type::first-line {
     font-size: 1.25em;
     font-variant: small-caps;
 }
 
+/* Changes the first letter of the first line of text to something different. */
 article p:first-of-type::first-letter {
     font-size: 4em;
     font-family: serif;
@@ -38,12 +39,14 @@ article p:first-of-type::first-letter {
 }
  
 /* Aside Styles */
+/* Floats the aside element to the left */
 aside {
     width: 768px;
     float: left;
 }
 
 /* Map Styles */
+/* Sets for parameters for cclass battleMap div element. */
 div#battleMap {
     width: 688px;
     margin-top: 20px;
@@ -53,6 +56,7 @@ div#battleMap {
     position: relative;
 }
 
+/* Defines width for the image map. */
 div img#mapImage {
     display: block;
     width: 100%;
@@ -64,42 +68,49 @@ div a.battleMarkers {
     position: absolute;
 }
 
-/* Defines cordinates on map for each marker. */
+/* Defines cordinates on map for marker 1. */
 div a#marker1 {
     top: 220px;
     left: 340px;
 }
 
+/* Defines cordinates on map for marker 2. */
 div a#marker2 {
     top: 190px;
     left: 358px;
 }
 
+/* Defines cordinates on map for marker 3. */
 div a#marker3 {
     top: 202px;
     left: 400px;
 }
 
+/* Defines cordinates on map for marker 4. */
 div a#marker4 {
     top: 217px;
     left: 452px;
 }
 
+/* Defines cordinates on map for marker 5. */
 div a#marker5 {
     top: 229px;
     left: 498px;
 }
 
+/* Defines cordinates on map for marker 6. */
 div a#marker6 {
     top: 246px;
     left: 544px;
 }
 
 /* Map Information Styles */
+/* Hides map info unless you hover the list markers with your mouse. */
 div.mapInfo {
     display: none;
 }
 
+/* Hides map info unless you hover the list markers with your mouse. */
 a.battleMarkers:hover+div.mapInfo {
     display: block;
 }
